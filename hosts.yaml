@@ -1,0 +1,11 @@
+[win]
+your_ip_address
+[win:vars]
+ansible_user=Administrator # admin of window serevr
+ansible_password=password_administrator
+ansible_connection=ssh
+ansible_shell_type=cmd
+ansible_ssh_common_args=-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
+ansible_ssh_retries=3
+ansible_become_method=runas
+ansible_winrm_transport=basic
